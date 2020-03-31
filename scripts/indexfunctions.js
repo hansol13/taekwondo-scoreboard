@@ -10,6 +10,6 @@ function navToPage(destination){
     //     case "about":
     //         break;
     // }
-    var url = '/main/' + destination + '.html';
+    var url = '/taekwondo-scoreboard/main/' + destination + '/' + destination + '.html';
     location.href = url;
 };

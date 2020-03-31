@@ -9,58 +9,34 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <script src="./scripts/indexfunctions.js"></script>
-
+    <script src="./scripts/w3.js"></script>
 </head>
+
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarColor02">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Poomsae</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sparring</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">References</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-          </ul>
-
-        </div>
-      </nav>
-
+  <div w3-include-html="navbar.html"></div>
       <div class="container">
           <div class="row">
             <div class="col-sm">
-              <button onclick="navToPage('poomsae');" type="button" class="btn btn-primary center">Poomsae</button>
+              <button onclick="navToPage('poomsae');" type="button" class="btn btn-primary center" style="width: 100%;">Poomsae</button>
             </div>
             <div class="col-sm">
-              <button onclick="navToPage('sparring');" type="button" class="btn btn-danger center">Sparring</button>
+              <button onclick="navToPage('sparring');" type="button" class="btn btn-danger center" style="width: 100%;">Sparring</button>
             </div>
           </div>
           <div class="row">
             <div class="col-sm">
-              <button onclick="navToPage('references');" type="button" class="btn btn-secondary">References</button>
+              <button onclick="navToPage('references');" type="button" class="btn btn-secondary" style="width: 100%;">References</button>
             </div>
             <div class="col-sm">
-              <button onclick="navToPage('about');" type="button" class="btn btn-info">About</button>
+              <button onclick="navToPage('about');" type="button" class="btn btn-info" style="width: 100%;">About</button>
             </div>
           </div>
         
         
       </div>    
-    
+      <script>
+        w3.includeHTML();
+      </script>
     
 </body>
 </html>
