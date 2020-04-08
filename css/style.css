@@ -12340,6 +12340,7 @@ select.form-control[multiple] {
 
 /* additional css */
 
-div button .center{
-    width:100%;
+.center-inline{
+  display: inline;
+  width: 100%;
 }

@@ -10,13 +10,85 @@
         <link rel="stylesheet" href="../../css/style.css">
         <script src="../../scripts/indexfunctions.js"></script>
         <script src="../../scripts/w3.js"></script>
+        <script src="./poomsaeScoring.js"></script>
     </head>
 <body>
     <div w3-include-html="../../navbar.html"></div>
     <div class="container">
         <div class="row">
             <div class="col-sm">
+                <div class="card border-info mb-3" >
+                    <div class="card-header">
+                        <h4>Scoretable &nbsp;<button onclick="refreshScores();" type="button" class="btn btn-outline-info">↻</button></h4>
+                        
+                    </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm">Accuracy</div>
+                                <div class="col-sm">Total</div>
+                                <div class="col-sm">Presentation</div>
+                            </div>
+                            <div class="row">
+                                <div id="accuracyScore" class="col-sm">5</div>
+                                <div id="totalScore" class="col-sm">10</div>
+                                <div id="presentationScore" class="col-sm">5</div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm">
+                <h3>Accuracy</h3>
+                <button type="button" onclick="accuracyDeduction(true);" class="btn btn-primary btn-lg btn-block">Major Deduction<br>-0.3</button>
+            </div>
+            <div class="col-sm">
+                
+            </div>
+            <div class="col-sm">
+                <h3>Presentation</h3>
+                <button type="button" onclick="presentationDeduction(true);" class="btn btn-danger btn-lg btn-block">Major Deduction<br>-0.3</button>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm">
+                <button type="button" onclick="accuracyDeduction(false);" class="btn btn-outline-primary btn-lg btn-block">Minor Deduction<br>-0.1</button>
+            </div>
+            <div class="col-sm"></div>
+            <div class="col-sm">
+                <button type="button" onclick="presentationDeduction(false);" class="btn btn-outline-danger btn-lg btn-block">Minor Deduction<br>-0.1</button>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-sm">
                 <h1>poomsae</h1>
+                <p>I need...
+                    <ul>
+                        <li>accuracy (red)
+                            <ul>
+                                <li>major button</li>
+                                <li>minor button</li>
+                                <li>major counter</li>
+                                <li>minor counter</li>
+                                <li>technical score</li>
+                            </ul>
+                        </li>
+
+                        <li>presentation (blue)
+                            <ul>
+                                <li>major button</li>
+                                <li>minor button</li>
+                                <li>major counter</li>
+                                <li>minor counter</li>
+                                <li>presentation score</li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </p>
             </div>
         </div>
     </div>
